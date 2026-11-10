@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Da Fish Tank · Meet the Crew</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- floating bubbles (pure CSS) -->
+  <div class="bubbles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="hero">
+    <img class="hero-bg" src="images/tank.jpg" alt="">
+    <div class="hero-text">
+      <p class="eyebrow">Welcome to</p>
+      <h1>Da Fish Tank</h1>
+      <p class="tagline">11 residents. Here's who's who and how to tell them apart.</p>
+      <a class="btn" href="#quick-id">Quick ID guide ↓</a>
+    </div>
+  </header>
+
+  <nav class="roster" aria-label="Jump to a tank-mate">
+    <a href="#goldfish">Thatcher</a>
+    <a href="#goldfish">Ethan</a>
+    <a href="#connor">Connor</a>
+    <a href="#rohan">Rohan</a>
+    <a href="#trio">Caden</a>
+    <a href="#trio">Amit</a>
+    <a href="#trio">Gabe</a>
+    <a href="#stella">Stella</a>
+    <a href="#frog-two">F.R.O.G. T.W.O.</a>
+    <a href="#frogs">Jessica</a>
+    <a href="#liv">Liv</a>
+  </nav>
+
+  <!-- QUICK ID -->
+  <section id="quick-id" class="quick-id">
+    <h2>Quick ID guide</h2>
+    <p class="section-intro">Spot a fish? Find what it looks like, then follow the clue.</p>
+    <div class="id-grid">
+      <div class="id-card orange">
+        <h3>Big &amp; orange</h3>
+        <p>Huge, long tail fin → <strong>Thatcher</strong></p>
+        <p>Smaller, weaker one → <strong>Ethan</strong></p>
+      </div>
+      <div class="id-card blue">
+        <h3>Blue with a red eye</h3>
+        <p>No stripe on its side → <strong>Connor</strong></p>
+        <p>Dark stripe across its side → <strong>Rohan</strong></p>
+      </div>
+      <div class="id-card amber">
+        <h3>Tiny orange trio</h3>
+        <p>Biggest → <strong>Gabe</strong></p>
+        <p>Middle size → <strong>Amit</strong></p>
+        <p>Smallest &amp; skinniest → <strong>Caden</strong></p>
+      </div>
+      <div class="id-card brown">
+        <h3>Spotted, stuck to stuff</h3>
+        <p>The algae-eater clinging to wood or glass → <strong>Stella</strong></p>
+      </div>
+      <div class="id-card violet">
+        <h3>Giant flowing fins</h3>
+        <p>Blue half moon betta → <strong>F.R.O.G. T.W.O.</strong></p>
+      </div>
+      <div class="id-card green">
+        <h3>Not a fish at all</h3>
+        <p>The two little frogs → <strong>Jessica</strong> &amp; <strong>Liv</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <main class="profiles">
+    <h2>Meet the crew</h2>
+
+    <!-- Thatcher & Ethan -->
+    <article id="goldfish" class="profile">
+      <figure class="photo">
+        <img src="images/thatcher-ethan.jpg" alt="Two orange goldfish, Thatcher on the left and Ethan on the right">
+        <span class="tag" style="left:24%; top:22%">Thatcher</span>
+        <span class="tag" style="left:68%; top:20%">Ethan</span>
+      </figure>
+      <div class="info">
+        <p class="species">Goldfish</p>
+        <h3>Thatcher &amp; Ethan</h3>
+        <ul class="clues">
+          <li><b>Thatcher</b> has a <em>much</em> bigger rear fin. That long, flowing tail is the giveaway.</li>
+          <li><b>Ethan</b> is the smaller, weaker of the two.</li>
+          <li>Ethan can sometimes be caught <b>eating his own poop</b>.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Connor -->
+    <article id="connor" class="profile reverse">
+      <figure class="photo">
+        <img src="images/connor.jpg" alt="Connor, a small blue fish with a red eye, resting by a rock">
+        <span class="tag" style="left:42%; top:30%">Connor</span>
+      </figure>
+      <div class="info">
+        <p class="species">Blue &amp; red-eyed</p>
+        <h3>Connor</h3>
+        <ul class="clues">
+          <li><b>No stripe</b> on his sides. That's how you know it's Connor and not Rohan.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Rohan -->
+    <article id="rohan" class="profile">
+      <figure class="photo">
+        <img src="images/rohan.jpg" alt="Rohan, a small blue fish with a dark stripe on his side">
+        <span class="tag" style="left:47%; top:33%">Rohan</span>
+      </figure>
+      <div class="info">
+        <p class="species">Blue &amp; red-eyed</p>
+        <h3>Rohan</h3>
+        <ul class="clues">
+          <li>Has a <b>dark stripe</b> running across his sides.</li>
+          <li>Looks a lot like Connor, so check for the stripe!</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Trio -->
+    <article id="trio" class="profile reverse">
+      <figure class="photo">
+        <img src="images/caden-amit-gabe.jpg" alt="Three small orange fish: Amit top left, Caden right, Gabe bottom">
+        <span class="tag" style="left:30%; top:16%">Amit</span>
+        <span class="tag" style="left:80%; top:24%">Caden</span>
+        <span class="tag" style="left:30%; top:78%">Gabe</span>
+      </figure>
+      <div class="info">
+        <p class="species">The trio</p>
+        <h3>Caden, Amit &amp; Gabe</h3>
+        <p>These three look alike, so go by size:</p>
+        <div class="size-scale">
+          <div><span class="dot s"></span><b>Caden</b><small>smallest &amp; skinniest</small></div>
+          <div><span class="dot m"></span><b>Amit</b><small>the Goldilocks: medium build</small></div>
+          <div><span class="dot l"></span><b>Gabe</b><small>largest of the three</small></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Stella -->
+    <article id="stella" class="profile">
+      <figure class="photo">
+        <img src="images/stella.jpg" alt="Stella the pleco clinging to the underside of driftwood">
+        <span class="tag" style="left:50%; top:62%">Stella</span>
+      </figure>
+      <div class="info">
+        <p class="species">Pleco</p>
+        <h3>Stella</h3>
+        <ul class="clues">
+          <li>The only pleco in the tank: spotted and usually <b>suctioned onto the driftwood</b> or glass.</li>
+          <li>She's the cleanup crew. Look under the wood if you can't find her.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- FROG TWO -->
+    <article id="frog-two" class="profile reverse">
+      <figure class="photo">
+        <img src="images/frog-two.jpg" alt="F.R.O.G. T.W.O., a blue half moon betta with large flowing fins">
+        <span class="tag" style="left:78%; top:14%">F.R.O.G. T.W.O.</span>
+      </figure>
+      <div class="info">
+        <p class="species">Half moon betta</p>
+        <h3>F.R.O.G. T.W.O.</h3>
+        <ul class="clues">
+          <li>Impossible to miss: <b>big, flowing blue fins</b> that fan out like a half moon.</li>
+          <li>A little quirky. He does his own thing.</li>
+          <li>Yes, he's a fish. No, we won't explain the name.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Jessica -->
+    <article id="frogs" class="profile">
+      <figure class="photo">
+        <img src="images/jessica-liv.jpg" alt="Jessica the African dwarf frog swimming by the glass">
+        <span class="tag" style="left:28%; top:14%">Jessica</span>
+      </figure>
+      <div class="info">
+        <p class="species">African dwarf frog</p>
+        <h3>Jessica</h3>
+        <ul class="clues">
+          <li>One of the tank's two <b>gold African dwarf frogs</b>. The other one is Liv.</li>
+          <li>Often spotted paddling up and down along the glass.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Liv -->
+    <article id="liv" class="profile reverse">
+      <figure class="photo">
+        <img src="images/liv.jpg" alt="Liv the African dwarf frog swimming with her webbed feet spread wide">
+        <span class="tag" style="left:50%; top:10%">Liv</span>
+      </figure>
+      <div class="info">
+        <p class="species">African dwarf frog</p>
+        <h3>Liv</h3>
+        <ul class="clues">
+          <li>One of the tank's two <b>gold African dwarf frogs</b>. The other one is Jessica.</li>
+          <li>Watch for her <b>webbed back feet</b> spread wide as she paddles up for air.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Da Fish Tank · please don't tap on the glass 🐟</p>
+  </footer>
+
+</body>
+</html>
